@@ -1,0 +1,382 @@
+:root {
+   --white: #fff;
+   --dark: #003459;
+   --blue: #3a6cf4;
+   --special: #4e9eff;
+}
+
+* {
+   font-family: 'Poppins', sans-serif;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   text-transform: capitalize;
+   scroll-behavior: smooth;
+   text-decoration: none;
+
+}
+
+header {
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   background: var(--white);
+   color: #2C2E3E;
+   width: 100%;
+   padding: 10px 120px;
+   position: fixed;
+   display: flex;
+   z-index: 999;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo {
+   font-size: 2.2em;
+   color: var(--blue);
+}
+
+.navbar a {
+   color: var(--blue);
+   font-weight: 600;
+   font-size: 1.5em;
+   padding-left: 40px;
+}
+
+
+.navbar a:hover {
+   color: var(--dark);
+}
+
+section {
+   padding: 150px 120px;
+}
+
+.mine {
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   background: url(../images/truck-vac-2.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+}
+
+.mine h3 {
+   font-size: 3em;
+   font-weight: 800;
+   color: #161823;
+}
+
+.mine h3 span {
+   display: inline-block;
+   margin-top: 10px;
+   font-size: 1.7em;
+   color: #161823;
+   font-weight: 600;
+}
+
+.mine h2 {
+   color: #161823;
+   font-size: 4em;
+   font-weight: 800;
+}
+
+.mine h2::after {
+   content: "صحية";
+   animation: textName 3s linear infinite;
+   color: #fff;
+}
+
+@keyframes textName {
+   25% {
+      content: "  نقية ";
+   }
+
+   75% {
+      content: "منعشة ";
+   }
+}
+
+.mine-btn {
+   display: inline-block;
+   padding: 0.9375em 2.1875em;
+   font-size: 1.2em;
+   font-weight: 600;
+   color: var(--white);
+   background-color: var(--blue);
+   letter-spacing: 1px;
+   margin-bottom: 40px;
+   border-radius: 15px;
+   transition: .6s ease;
+}
+
+.mine-btn:hover {
+   transform: scale(1.1);
+   background-color: var(--dark);
+}
+
+.icons a {
+   color: var(--white);
+   font-size: 1.9em;
+   padding-right: 25px
+}
+
+.special-heading {
+   font-size: 2em;
+   font-weight: 600;
+   color: var(--dark);
+   text-align: center;
+   position: relative;
+   margin-bottom: 30px;
+   padding-top: 80px;
+   padding-bottom: 15px;
+}
+
+.special-heading::before {
+   content: "";
+   position: absolute;
+   width: 80px;
+   height: 3px;
+   background-color: #111;
+   bottom: 0;
+   left: calc(50% - 40px);
+}
+
+.special-heading::after {
+   content: "";
+   position: absolute;
+   width: 16px;
+   height: 10px;
+   background-color: var(--special);
+   border: 4px solid var(--white);
+   left: calc(50% - 11px);
+   bottom: -7px;
+}
+
+.container {
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+.content h1 {
+   font-size: 2.1em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: 20px;
+}
+.about-text span{
+   font-size: 2em ;
+
+}
+.about .contacyinfo {
+   width: 38%;
+   display: flex;
+   flex-direction: column;
+}
+
+.about .contacyinfo .box {
+   position: relative;
+   display: flex;
+   padding: 25px;
+   margin-left: -25px;
+}
+
+.about .contacyinfo .box .icone {
+   min-width: 60px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   font-size: 1.563em;
+   color: var(--special);
+}
+
+.about .contacyinfo .box .text {
+   display: flex;
+   margin-left: 20px;
+   font-size: 1.25em;
+   font-weight: 300;
+   flex-direction: column;
+}
+
+.about .contacyinfo .box .text h3 {
+   font-weight: 500;
+}
+
+.about .contacyinfo .box .text p {
+   font-size: 1.1em;
+}
+
+.about {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 1em;
+}
+
+.about .about-img img {
+   width: 80%;
+   border-radius: .6em;
+   object-fit: contain;
+}
+
+
+footer {
+   background: url(../images/background-8.jpg);
+   color: var(--white);
+   text-align: center;
+   padding: 30px;
+}
+
+.container-footer {
+   max-width: 1300px;
+   margin: auto;
+   padding: 0 40px;
+}
+
+.copyright {
+   font-size: 1.2em;
+   margin-bottom: 20;
+}
+
+.copyright a {
+   font-size: 1.24em;
+   font-weight: 500;
+   color: var(--special);
+}
+
+.icons-footer a {
+   color: #fff;
+   font-size: 1.9em;
+   margin: 0 10px;
+}
+
+
+
+/* Small */
+@media (min-width: 768px) {
+   .container {
+      width: 750px;
+   }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+   .container {
+      width: 970px;
+   }
+
+}
+
+@media screen and (max-width: 980px) {
+
+   .contact {
+      padding: 50px;
+   }
+
+   .container-contact {
+      flex-direction: column;
+   }
+
+   .container-contact .contactform {
+      margin-bottom: 30px;
+   }
+
+   .container-contact .contacyinfo, .contactform {
+      width: 100%;
+   }
+
+   .container-footer {
+      max-width: 800px;
+   }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+   .container {
+      width: 1170px;
+   }
+}
+
+@media (max-width: 1200px) {
+   header {
+      padding: 12px 20px;
+   }
+
+   .navbar a {
+      padding-left: 15px;
+   }
+
+   .logo {
+      font-size: 2em;
+   }
+
+   section {
+      padding: 80px 20px;
+   }
+
+   .main-content h2 {
+      font-size: 1em;
+   }
+
+   .main-content h3 {
+      font-size: 1.6em;
+   }
+
+   .image-column {
+      display: none;
+   }
+}
+
+@media (max-width:641px) {
+   body {
+      font-size: 13px;
+   }
+
+
+   section {
+      padding: 20px;
+   }
+
+   .navbar a {
+      font-size: 1.1em;
+   }
+
+   .main-content h2 {
+      font-size: 0.8em;
+   }
+
+   .main-content h3 {
+      font-size: 1.4em;
+   }
+
+
+   .about {
+      grid-template-columns: 1fr;
+      text-align: center;
+   }
+
+   .contact {
+      padding: 15px;
+   }
+
+   .container-footer {
+      padding: 0 20px;
+   }
+}
+
+@media (max-width:300px) {
+   body {
+      font-size: 10px;
+   }
+
+   .box .box-img {
+      height: 300px;
+   }
+}
