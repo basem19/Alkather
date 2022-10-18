@@ -184,7 +184,6 @@ section {
    position: relative;
    display: flex;
    padding: 25px;
-   margin-left: -25px;
 }
 
 .about .contacyinfo .box .icone {
